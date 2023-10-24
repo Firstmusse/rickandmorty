@@ -1,0 +1,51 @@
+.person-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+.count-page{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+}
+.characters-img{
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+.count-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+.right-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+}
+.right-arrow-icon{
+    width: 55px;
+    height: 55px;
+}
+
+.left-arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+}
+.left-arrow-icon{
+    width: 55px;
+    height: 55px;
+    rotate: 180deg;
+}
+.active-page{
+    margin: 10px;
+}

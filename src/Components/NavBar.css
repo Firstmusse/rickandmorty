@@ -1,0 +1,12 @@
+.nav-bar{
+    background-color: #967fffb3;
+
+}
+.listId{
+    max-width: 800px;
+    margin:  0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+}

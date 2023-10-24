@@ -1,27 +1,36 @@
-import * as React from 'react';
+import { useEffect, useState } from 'react'
+import { Link } from "react-router-dom";
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import WebIcon from '@mui/icons-material/Web';
 import FavoriteIcon from '@mui/icons-material/Favorite';
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+
+import './NavBar.css'
 
 
-export default function Components() {
-    const [value, setValue] = React.useState(0);
+
+const NavBar = ({apiCategoryProps}) => {
+    const [apiLink , setApiLink] = useState([])
+
+    useEffect(() => {
+        setApiLink(apiCategoryProps)
+    }, [apiCategoryProps])
+
+
+
     return (
-        <Box className={'nav-bar'} sx={{ width: 500 }}>
-            <BottomNavigation
-                showLabels
-                value={value}
-                onChange={(event, newValue) => {
-                    setValue(newValue);
-                }}
-            >
-                <BottomNavigationAction label="Main" icon={<WebIcon />} />
-                <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-                <BottomNavigationAction label="Profile" icon={<LocationOnIcon />} />
-            </BottomNavigation>
-        </Box>
-    );
+        <div className='nav-bar' >
+            <ul className="listId">
+                <div className='btn-home'>
+                    <Link to="/">Home</Link>
+                </div>
+                {
+                apiLink.map(elem =>
+                <a href={elem} key={elem}>{elem}</a>)
+            }
+            </ul>
+        </div>
+    )
 }
+export default NavBar

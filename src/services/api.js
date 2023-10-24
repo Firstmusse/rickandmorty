@@ -1,10 +1,18 @@
-import React from 'react'
+import axios from "axios";
 
-const api = () => {
-    return (
-        <div>
+export const getCharacters = async (mainPage) =>{
+    const action = await axios.get(
+        `https://rickandmortyapi.com/api/character?page=${mainPage}`
 
-        </div>
-    )
+    );
+
+
+    return {...action.data , loading: false}
 }
-export default api
+
+export const getLocations = async (mainPage) =>{
+    const action = await axios.get(
+        `https://rickandmortyapi.com/api/location?page=${mainPage}`
+    )
+    return {...action , loading: false}
+}

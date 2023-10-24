@@ -1,0 +1,11 @@
+.location-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.arrow-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
