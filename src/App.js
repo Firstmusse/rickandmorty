@@ -39,9 +39,9 @@ function App() {
 
           <Routes>
               <Route path='/rickandmorty' element={<MainPage />} />
-              <Route path='/characters' element={<Character />} />
-              <Route path='/locations' element={<Locations />} />
-              <Route path='/episodes' element={<Episodes />} />
+              <Route path='/rickandmorty/characters' element={<Character />} />
+              <Route path='/rickandmorty/locations' element={<Locations />} />
+              <Route path='/rickandmorty/episodes' element={<Episodes />} />
               <Route path='*' element={<NotFoundPage />} />
 
           </Routes>
