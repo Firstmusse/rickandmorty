@@ -38,7 +38,7 @@ function App() {
         <NavBar  apiCategoryProps={apiCategory}/>
 
           <Routes>
-              <Route path='/' element={<MainPage />} />
+              <Route path='/rickandmorty' element={<MainPage />} />
               <Route path='/characters' element={<Character />} />
               <Route path='/locations' element={<Locations />} />
               <Route path='/episodes' element={<Episodes />} />
