@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/rickandmorty/static/css/main.0963bb0f.css",
-    "main.js": "/rickandmorty/static/js/main.c931b0f5.js",
+    "main.js": "/rickandmorty/static/js/main.0dbd7bbe.js",
     "static/media/Comfortaa-Bold.ttf": "/rickandmorty/static/media/Comfortaa-Bold.b54f8469bcbf22829055.ttf",
     "static/media/Comfortaa-Regular.ttf": "/rickandmorty/static/media/Comfortaa-Regular.6718cbec512d80eb9cbb.ttf",
     "index.html": "/rickandmorty/index.html",
     "static/media/right-arrow.svg": "/rickandmorty/static/media/right-arrow.e948ceb37678a09cbe1e38f35c65da44.svg",
     "main.0963bb0f.css.map": "/rickandmorty/static/css/main.0963bb0f.css.map",
-    "main.c931b0f5.js.map": "/rickandmorty/static/js/main.c931b0f5.js.map"
+    "main.0dbd7bbe.js.map": "/rickandmorty/static/js/main.0dbd7bbe.js.map"
   },
   "entrypoints": [
     "static/css/main.0963bb0f.css",
-    "static/js/main.c931b0f5.js"
+    "static/js/main.0dbd7bbe.js"
   ]
 }
