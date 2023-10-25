@@ -1,7 +1,7 @@
 
 import './App.css';
 import React, {useState , useEffect} from 'react';
-import {Routes, Route} from 'react-router-dom'
+import {Routes, Route , useLocation } from 'react-router-dom'
 import NavBar from "./Components/NavBar";
 import axios from "axios";
 
@@ -21,6 +21,7 @@ const episodes   = "https://rickandmortyapi.com/api/episode"
 
 
 function App() {
+    const location = useLocation();
 
     const [apiCategory , setApiCategory] = useState([])
 
@@ -30,6 +31,7 @@ function App() {
             .then(res => {
                 setApiCategory(Object.keys(res.data))
             })
+        console.log('Current location is ', location);
     },[])
 
   return (
@@ -39,7 +41,7 @@ function App() {
 
           <Routes>
               <Route path='/rickandmorty' element={<MainPage />} />
-              <Route path='/*/characters' element={<Character />} />
+              <Route path='/rickandmorty/characters' element={<Character />} />
               <Route path='/rickandmorty/locations' element={<Locations />} />
               <Route path='/rickandmorty/episodes' element={<Episodes />} />
               <Route path='*' element={<NotFoundPage />} />

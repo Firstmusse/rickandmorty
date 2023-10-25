@@ -23,11 +23,13 @@ const NavBar = ({apiCategoryProps}) => {
         <div className='nav-bar' >
             <ul className="listId">
                 <div className='btn-home'>
-                    <Link to="/">Home</Link>
+                    <Link to="/rickandmorty">Home</Link>
                 </div>
                 {
                 apiLink.map(elem =>
-                <a href={elem} key={elem}>{elem}</a>)
+                        <Link to={`/rickandmorty/${elem}`}>{elem}</Link>
+                )
+
             }
             </ul>
         </div>
