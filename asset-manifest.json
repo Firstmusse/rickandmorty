@@ -1,16 +1,18 @@
 {
   "files": {
-    "main.css": "/rickandmorty/static/css/main.0963bb0f.css",
-    "main.js": "/rickandmorty/static/js/main.48a5812e.js",
-    "static/media/Comfortaa-Bold.ttf": "/rickandmorty/static/media/Comfortaa-Bold.b54f8469bcbf22829055.ttf",
-    "static/media/Comfortaa-Regular.ttf": "/rickandmorty/static/media/Comfortaa-Regular.6718cbec512d80eb9cbb.ttf",
+    "main.css": "/rickandmorty/static/css/main.221afb17.css",
+    "main.js": "/rickandmorty/static/js/main.64544e17.js",
+    "static/media/Poppins-Regular.ttf": "/rickandmorty/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/Poppins-SemiBold.ttf": "/rickandmorty/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
+    "static/media/Poppins-Bold.ttf": "/rickandmorty/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/rickandmorty/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
     "index.html": "/rickandmorty/index.html",
     "static/media/right-arrow.svg": "/rickandmorty/static/media/right-arrow.e948ceb37678a09cbe1e38f35c65da44.svg",
-    "main.0963bb0f.css.map": "/rickandmorty/static/css/main.0963bb0f.css.map",
-    "main.48a5812e.js.map": "/rickandmorty/static/js/main.48a5812e.js.map"
+    "main.221afb17.css.map": "/rickandmorty/static/css/main.221afb17.css.map",
+    "main.64544e17.js.map": "/rickandmorty/static/js/main.64544e17.js.map"
   },
   "entrypoints": [
-    "static/css/main.0963bb0f.css",
-    "static/js/main.48a5812e.js"
+    "static/css/main.221afb17.css",
+    "static/js/main.64544e17.js"
   ]
 }
