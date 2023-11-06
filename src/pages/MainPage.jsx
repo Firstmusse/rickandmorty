@@ -1,11 +1,19 @@
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useMemo} from 'react'
 import Search from '../Components/Search.jsx'
-import { getCharacters } from '../services/api'
+import {getCharacters, getRandomCharacter} from '../services/api'
+import RandomCharacters from "../Components/RandomCharacters";
+import './MainPage.css'
+
+
+
 const MainPage = () => {
     const [mainPage, setMainPage] = useState(1)
     const [characters , setCharacters] = useState([]) // массив с персонажами 20шт
     const [pageCharacters, setPageCharacters] = useState([]) // ссылки на след и предыдущую страницу инфо о количестве:  1. Персонажей 2. Страниц
     const [loading, setLoading] = useState(true) // состояние загрузки
+    const [lastPage , setLastPage] = useState(null) // последняя страница (42)
+
+    const [randomCharacters, setRandomCharacters] = useState([])
 
     useEffect(() => {
         getCharacters(mainPage).then
@@ -13,16 +21,24 @@ const MainPage = () => {
             setCharacters(res.results)
             setLoading(res.loading)
             setPageCharacters(res.info)
+            setLastPage(res.info.pages)
 
         });
 
-    }, [mainPage]);
+        }, [mainPage]);
+
+
+
 
     return (
-        <div>
+        <div className='search-main-block'>
 
-            <h1 style={{textAlign: 'center'}}>Search characters</h1>
             <Search characters = {characters}/>
+            <RandomCharacters
+                              allCharactersInfo = {pageCharacters}
+                              randomCharacters = {randomCharacters}
+            />
+
         </div>
     )
 }

@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react'
-import axios from "axios";
 import './Character.css'
 import rightIcon from '../img/right-arrow.svg'
 import leftIcon from '../img/right-arrow.svg'
@@ -17,11 +16,12 @@ const Character = () => {
     const [mainPage, setMainPage] = useState(1)
     const [loading, setLoading] = useState(true) // состояние загрузки
 
+    const [allCharacters , setAllCharacters] = useState([])
+
 
     const nextPage = (mainPage) => {
         if(mainPage < pageCharacters.pages )
             setMainPage(mainPage+1)
-
     }
 
     const prevPage = (mainPage) => {
@@ -31,23 +31,30 @@ const Character = () => {
     }
 
     useEffect(() => {
+
         getCharacters(mainPage).then
         ((res) => {
             setCharacters(res.results)
             setLoading(res.loading)
             setPageCharacters(res.info)
 
+            // if (mainPage != pageCharacters.pages){
+            //     setMainPage(mainPage +1)
+            // }
+
         });
+        // setAllCharacters(characters)
 
     }, [mainPage]);
 
-
+    // console.log(allCharacters)
 
     return (
+
         <>
+
             {loading ? ('Loading...') : (
                 <>{
-
                 }
                     <div className="count-page">
                         {characters.map((character, index) => (

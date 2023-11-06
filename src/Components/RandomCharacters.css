@@ -1,0 +1,29 @@
+.random-character-block{
+display: flex;
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 25px;
+}
+.random-character-block img{
+    width: 300px;
+    border-radius: 50px;
+}
+.random-character-block h4{
+    font-size: 48px;
+    margin: 0px;
+    max-width: 500px;
+}
+.random-character-block-info{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.random-character-block-info p > span{
+    font-weight: bold;
+}
+.random-character-block-info button{
+    font-size: 14px;
+    text-decoration: underline;
+}

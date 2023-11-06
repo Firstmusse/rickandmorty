@@ -1,22 +1,9 @@
-/*.mainPage{*/
-/*    background-image: url(/src/img/Garage.webp);*/
-/*    background-size: cover;*/
-/*    background-repeat: no-repeat;*/
-/*    height: 100vh;*/
-/*    font-weight: bold;*/
-/*    background-position: center center;*/
-/*}*/
-
-@font-face {
-    font-family: 'Comfortaa-Reg';
-    src: url('./fonts/Comfortaa-Regular.ttf');
-}
-@font-face {
-    font-family: 'Comfortaa-Bold';
-    src: url('./fonts/Comfortaa-Bold.ttf');
-}
 
 
-.mainPage{
-    font-family: 'Comfortaa-Reg', sans-serif;
+
+.main-page-container{
+    max-width: 1440px;
+    display: flex;
+    margin: 15px 45px 0 45px;
 }
+

@@ -1,12 +1,31 @@
 .nav-bar{
-    background-color: #967fffb3;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-right: 15px;
 
 }
-.listId{
-    max-width: 800px;
+.nav-list{
     margin:  0 auto;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 50px;
+    color: #474A51;
+}
+.nav-list a{
+    width: 215px;
+    height: 45px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+
+}
+.nav-list a:hover{
+    background: #8692A6;
+    border-radius: 50px;
+    color: #fff;
 }

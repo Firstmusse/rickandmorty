@@ -1,10 +1,5 @@
-import { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from "react-router-dom";
-import Box from '@mui/material/Box';
-import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import WebIcon from '@mui/icons-material/Web';
-import FavoriteIcon from '@mui/icons-material/Favorite';
 
 import './NavBar.css'
 
@@ -21,13 +16,15 @@ const NavBar = ({apiCategoryProps}) => {
 
     return (
         <div className='nav-bar' >
-            <ul className="listId">
-                <div className='btn-home'>
-                    <Link to="/rickandmorty">Home</Link>
-                </div>
+            <h1 className='logo-title'>Rick & Morty API</h1>
+            <ul className="nav-list">
+                <Link to="/rickandmorty">HOME</Link>
                 {
                 apiLink.map(elem =>
-                        <Link to={`/rickandmorty/${elem}`}>{elem}</Link>
+                        <Link key={elem}
+                              to={`/rickandmorty/${elem}`}
+                                        >{elem.toUpperCase()}
+                        </Link>
                 )
 
             }

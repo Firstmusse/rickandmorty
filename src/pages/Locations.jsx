@@ -10,7 +10,7 @@ import LocationCard from "../Components/LocationCard";
 
 const Locations = () => {
 
-    const [mainPage, setMainPage] = useState(3)
+    const [mainPage, setMainPage] = useState(1)
     const [lastPage, setLastPage] = useState()
     const [locations, setLocations] = useState([])
     const [loading, setLoading] = useState(true) // состояние загрузки

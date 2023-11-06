@@ -1,28 +1,58 @@
 .search-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.search{
+    z-index: 5;
+    position: relative;
+}
+.search-result-block{
+    position: absolute;
+    top: 45px;
+    left: 40px;
+     max-height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll ;
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.search-result-block::-webkit-scrollbar {
+    display: none;
 }
 .search-container{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    position: relative;
+    margin-bottom: 35px;
 }
 .search{
-    height: 36px;
-    width: 458px;
-    margin: 0;
-    padding: 0 0 0 5px;
+    height: 45px;
+    width: 340px;
+    border-radius: 50px;
+    padding: 0 0 0 15px;
     background-color:#FAFAFA;
     border: 1px solid #E5E5E5;
+    margin: 0 0 0 25px;
 }
 .search:focus{
     border: 1px solid black;
     background-color: white;
  }
+
 .search-btn{
-    height: 37px;
-    background-color: #15616D;
-    color: white;
-    width: 80px;
+    background-color: #8591a5;
+    border-radius: 50px;
+    height: 45px;
+    width: 87px;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 14px;
 }
 :active, :hover, :focus {
     outline: 0;
@@ -32,14 +62,15 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    min-width: 544px;
-    height: 32px;
+    min-width: 320px;
     box-sizing: border-box;
-    padding-left: 12px;
+    padding: 5px 0 5px 12px;
+    height: 45px;
 }
 .search-card:hover{
-     background-color: #CEDFE1;
-    color: #15616D;
+    background: #8692A6;
+    color: #fff;
+    cursor: pointer;
  }
 
 .search-card img {
@@ -49,7 +80,29 @@
 }
 .search-card span {
     margin-right: 5px;
+    width: 50px;
+
 }
-.search-card h4{
-    text-align: center;
+.delete-search-text{
+    position: absolute;
+    width: 20px;
+}
+
+.delete-block{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 100px;
+}
+
+.characters-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.characters-block img{
+    width: 35px;
+}
+.characters-block p{
+    margin: 0 0 0 10px;
 }
